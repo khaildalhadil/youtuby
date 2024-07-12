@@ -1,0 +1,196 @@
+@font-face {
+  font-family: 'cairoFont';
+  src: url('../fonts/Cairo-SemiBold.ttf')
+}
+
+body {
+  background-color: #fafafa !important ;
+  font-family: 'cairoFont', Arial, sans-serif;
+}
+
+a {
+  color: #000 !important;
+  text-decoration: none !important;
+}
+
+#top-menu .bg-light {
+  background-color: #fff !important;
+}
+
+
+.logo--youtube {
+  padding: 1px 30px;
+  background-color:#dc3545;
+  color: #fff;
+  border-radius: 9px;
+  position: relative;
+}
+
+.nav-item .nav-link:hover, .active {
+  background-color: #dc3545;
+  color: #fff !important ;
+}
+
+.active {
+  color: #fff !important ;
+}
+
+.card:hover .fa-2x {
+  display: inline !important ;
+  color: #444;
+}
+
+.card {
+  transition: .3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.fa-lg {
+  cursor: pointer;
+}
+
+.sidebar {
+  position: fixed;
+  z-index: 5;
+  transition: all 0.5s ease-in-out;
+  height: 100%;
+  background-color: #fff;
+  font-size: 18px;
+  overflow: hidden;
+  padding-bottom: 75px;
+}
+
+.sidebar:hover {
+  overflow-y: scroll;
+}
+
+.sidebar.show  {
+  right: -25rem;
+}
+
+.sidebar .danger {
+  color: #dc3545
+}
+
+.sidebar .list-group-item:hover  {
+  color: #fff !important;
+  background-color: #dc3545;
+}
+
+.sidebar .list-group-item:hover .danger {
+  color: #fff !important;
+}
+
+.sidebar .list-group-item {
+  width: 19rem;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: rgb(179, 179, 179);
+  width: 8px;
+}
+
+.layer {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, .5);
+  display: none;
+}
+
+.search-icon {
+  display: none !important ;
+  color: #dc3545;
+  cursor: pointer;
+  padding: 15px 10px;
+  position: absolute;
+  top: 15px;
+  left: 132px;
+}
+
+.search-icon:hover {
+  background-color: #dc3545;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.search-input {
+  position: fixed;
+  top: 72px;
+  border: none;
+  padding: 6px 23px;
+  height: 60px;
+  background-color: #efeeee;
+  display: none !important;
+  z-index: 1;
+  margin-top: 4px;
+  outline: none !important;
+  width: 70vw;
+  margin-right: 10%;
+}
+
+.search-input:focus {
+  outline: none !important ;
+  background-color: #efeeee;
+}
+
+.hidden--input--top {
+  display: inline !important;
+  transition: .5s;
+}
+
+/* 1170 */
+
+@media (max-width: 1170px) {
+  .navbar .collapse .form-inline {
+    display: none;
+  }
+
+  .navbar .search-icon {
+    display: inline !important ;
+  }
+}
+
+/*************************/
+/* search page style  */
+/*************************/
+
+.clear {
+  cursor: pointer;
+}
+
+.hidden--option {
+  display: flex !important;
+}
+
+/* ❌ bropolme there */
+/* .text-NoWrap {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+} */
+
+/****************************/
+/*    LOG page style  */
+/***************************/
+.list-of-date {
+  height: 600px;
+}
+
+.list-of-date a {
+  cursor: pointer;
+}
+
+.active {
+  background-color: #dc3545 !important;
+  border: none;
+}
+
+.remove {
+  cursor: pointer;
+}

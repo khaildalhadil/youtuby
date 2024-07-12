@@ -1,0 +1,20 @@
+
+.card:hover {
+  transform: translateY(0px) !important;
+}
+
+.hidden {
+  display: block;
+}
+
+#more {
+  display: none;
+}
+
+.dottedToggle  {
+  display: none;
+}
+
+.moreTestToggle {
+  display: block !important;
+}

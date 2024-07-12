@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- links bootstrap style  -->
+    <link rel="stylesheet" href="../STYLE/bootstrap-rtl.css">
+    <!--  End of links bootstrap style  -->
+      
+    <!-- our style  -->
+    <link rel="stylesheet" href="../STYLE/index.css">
+    <!-- End of our style  -->
+
+    <!-- link icon awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- End of link icon awesome -->
+
+    <title>يوتيوبي</title>
+</head>
+<body class="rtl bg-light">
+    <!-- nav bootstrap -->
+    <div id="top-menu">
+        <div class="container-fluid ">
+          <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light mb-5  " >
+            <a class="navbar-brand" href="index.html">يوتيوبي</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-lg-auto">
+              <li class="nav-item active">
+              <a class="nav-link" tabindex="4" href="index.html">الفيديوات المقترحة</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link ml-lg-3 " tabindex="3" href="#">المرفوعة حديثا</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link " href="#" tabindex="1" >الفيديوهات الرائجة</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link " href="#" data-toggle="modal" data-target="#loginModal" >تسجيل الدخول </a>
+              </li>
+            </ul>
+            <div class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search">
+              <button onclick="location.href='./search.html';" class="btn  btn-danger my-2 my-sm-0" type="submit">أبحث</button>
+            </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+        <!-- End of nav bootstrap -->
+    
+        <!-- Modal -->
+        <div class="modal rtl fade" id="loginModal" data-backdrop="static" data-keyboard="false" tabindex="-1" >
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">تسجيل الدخول</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span >&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                            <label for="email" class="col-form-label">البريد الاكتروني:</label>
+                            <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="col-form-label">كلمة المرور:</label>
+                                <input type="password" class="form-control" id="recipient-name">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <a class="" href="">نسيت كلمة المرور</a>
+                        <a class="mx-auto" href="">أنشاء حساب</a>
+                        <button type="button" class="btn btn-outline-danger">دخول</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- End of Modal -->
+
+    <!-- body   -->
+    <div class="history-page">
+        <div class="container">
+            <div class="row container mt-5  pt-5 mx-auto">
+              <div class="col-3 bg-white my-3  list-of-date" >
+                <input type="search" placeholder="أبحث في التاريخ" class="border-0 form-control my-3 " >
+                <hr>
+                <div class="list-group pr-0 mt-4 border-0 list-group-flush  " id="list-tab" role="tablist">
+                    <p>نوع السجل:</p>
+                    <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list">سجل المشاهدة</a>
+                    <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list">سجل البحث</a>
+                    <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list">التعليقات</a>
+                    <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list">المنتدى</a>
+                </div>
+                <div class="list-group pr-0 mt-4 border-0 list-group-flush " id="list-tab" role="tablist">
+                    <p>التاريخ:</p>
+                    <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list">منذ 24 ساعة</a>
+                    <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list">منذ 3 أيام</a>
+                    <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list">منذ أسبع</a>
+                    <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list">منذ شهر</a>
+                </div>
+              </div>
+
+                <div class="col-9 ">
+                    <div class="row " id="first__card">
+                        <div class=" col-md-12  ">
+                            <div class="card mb-3 " >
+                                <div class="card-horizontal d-md-flex">
+                                    <div class="img-square-wrapper w-50 p-2 position-relative">
+                                        <a href="watch.html">
+                                          <img class="col-sm-12 p-sm-0 " src="../img/thumbnail/devtools.jpg" alt="Card image cap">
+                                          <time class="position-absolute p-1 px-2 mr-2 mb-2 bg-dark text-white" style="left: 0; bottom: 0;  " >9:20</time>
+                                          <i class="fas fa-play fa-2x position-absolute d-none" style="top: 46%; left: 48%" ></i>
+                                        </a>
+                                        <i class="fas fa-times remove position-absolute" style="top: 15px; right: 15px; z-index: 10" ></i>
+                                    </div>
+                                    <div class="card-body ">
+                                        <a href="">
+                                            <h4 class="card-title">كيف تستخدم ادوات المطور في كروم</h4>
+                                        </a>
+                                        <p class="card-text">كيف تستخدم ادوات المطور في كروم كيف تستخدم ادوات المطور في كروم كيف تستخي كروم</p>
+                                        <small class="text-muted">
+                                            <i class="fa-solid fa-film mr-4 ">
+                                              <span>مشاهدة  500 </span>
+                                            </i>
+                                            <i class="fa-solid fa-clock mr-2 ">
+                                              <span>قبل 3 اشهر</span>
+                                            </i>
+                                            <a class="" href="#" >
+                                                <img class="rounded-circle mr-2" width="30" src="../img/mostaql.png" alt="channel img">
+                                                <span>خالد الهادي</span>
+                                            </a>
+                                          </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="seconde__card">
+                        <div class="my-3 col-md-12  ">
+                            <div class="card  " >
+                                <div class="card-horizontal d-md-flex">
+                                    <div class="img-square-wrapper position-relative ">
+                                      <span class="position-absolute x" style="top: 2px; right: 14px; z-index: 1; font-size: 25px;" >x</span>
+                                        <a href="watch.html">
+                                            <img class="col-sm-12  p-sm-0" src="../img/thumbnail/devtools.jpg" alt="Card image cap">
+                                        </a>
+                                    </div>
+                                    <div class="card-body ">
+                                        <a href="">
+                                            <h4 class="card-title">كيف تستخدم ادوات المطور في كروم</h4>
+                                        </a>
+                                        <p class="card-text">كيف تستخدم ادوات المطور في كروم كيف تستخدم ادوات المطور في كروم كيف تستخي كروم</p>
+                                        <small class="text-muted">
+                                            <i class="fa-solid fa-film mr-4 ">
+                                              <span>مشاهدة  500 </span>
+                                            </i>
+                                            <i class="fa-solid fa-clock mr-2 ">
+                                              <span>قبل 3 اشهر</span>
+                                            </i>
+                                            <a class="" href="#" >
+                                                <img class="rounded-circle mr-2" width="30" src="../img/mostaql.png" alt="channel img">
+                                                <span>خالد الهادي</span>
+                                            </a>
+                                          </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="third__card">
+                        <div class="my-3 col-md-12  ">
+                            <div class="card  " >
+                                <div class="card-horizontal d-md-flex">
+                                    <div class="img-square-wrapper position-relative">
+                                      <span class="position-absolute x" style="top: 2px; right: 14px; z-index: 1; font-size: 25px;" >x</span>
+                                        <a href="watch.html">
+                                            <img class="col-sm-12  p-sm-0" src="../img/thumbnail/devtools.jpg" alt="Card image cap">
+                                        </a>
+                                    </div>
+                                    <div class="card-body ">
+                                        <a href="">
+                                            <h4 class="card-title">كيف تستخدم ادوات المطور في كروم</h4>
+                                        </a>
+                                        <p class="card-text">كيف تستخدم ادوات المطور في كروم كيف تستخدم ادوات المطور في كروم كيف تستخي كروم</p>
+                                        <small class="text-muted">
+                                            <i class="fa-solid fa-film mr-4 ">
+                                              <span>مشاهدة  500 </span>
+                                            </i>
+                                            <i class="fa-solid fa-clock mr-2 ">
+                                              <span>قبل 3 اشهر</span>
+                                            </i>
+                                            <a class="" href="#" >
+                                                <img class="rounded-circle mr-2" width="30" src="../img/mostaql.png" alt="channel img">
+                                                <span>خالد الهادي</span>
+                                            </a>
+                                          </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="Fifth__card">
+                        <div class="my-3 col-md-12  ">
+                            <div class="card  " >
+                                <div class="card-horizontal d-md-flex">
+                                    <div class="img-square-wrapper position-relative">
+                                      <span class="position-absolute x" style="top: 2px; right: 14px; z-index: 1; font-size: 25px;" >x</span>
+                                        <a href="watch.html">
+                                            <img class="col-sm-12  p-sm-0" src="../img/thumbnail/devtools.jpg" alt="Card image cap">
+                                        </a>
+                                    </div>
+                                    <div class="card-body ">
+                                        <a href="">
+                                            <h4 class="card-title">كيف تستخدم ادوات المطور في كروم</h4>
+                                        </a>
+                                        <p class="card-text">كيف تستخدم ادوات المطور في كروم كيف تستخدم ادوات المطور في كروم كيف تستخي كروم</p>
+                                        <small class="text-muted">
+                                            <i class="fa-solid fa-film mr-4 ">
+                                              <span>مشاهدة  500 </span>
+                                            </i>
+                                            <i class="fa-solid fa-clock mr-2 ">
+                                              <span>قبل 3 اشهر</span>
+                                            </i>
+                                            <a class="" href="#" >
+                                                <img class="rounded-circle mr-2" width="30" src="../img/mostaql.png" alt="channel img">
+                                                <span>خالد الهادي</span>
+                                            </a>
+                                          </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script src="../JS/log.js"></script>
+
+</body>
+</html>
