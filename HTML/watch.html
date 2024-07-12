@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ra" dir="rtl" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- links bootstrap style  -->
-    <link rel="stylesheet" href="../STYLE/bootstrap-rtl.css">
+    <link rel="stylesheet" href="../STYLE/bootstrap.rtl.css">
     <!--  End of links bootstrap style  -->
 
     <!-- our style  -->
@@ -19,11 +19,11 @@
 
     <title>يوتيوبي</title>
 </head>
-<body class="rtl bg-light">
+<body class="bg-light">
     <!-- nav bootstrap -->
     <div id="top-menu">
         <div class="container-fluid ">
-            <nav class="navbar navbar-expand-lg fixed-top navbar-light mb-5  " >
+            <nav class="navbar navbar-expand-lg fixed-top navbar-light mb-5 p-3 " >
                 <a class="navbar-brand" href="index.html">يوتيوبي</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
@@ -35,7 +35,7 @@
                     <a class="nav-link" tabindex="4" href="index.html">الفيديوات المقترحة</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link ml-lg-3 " tabindex="3" href="#">المرفوعة حديثا</a>
+                    <a class="nav-link ms-lg-3 " tabindex="3" href="#">المرفوعة حديثا</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link " href="#" tabindex="1" >الفيديوهات الرائجة</a>
@@ -44,8 +44,8 @@
                     <a class="nav-link " href="#" data-toggle="modal" data-target="#loginModal" >تسجيل الدخول </a>
                     </li>
                 </ul>
-                <div class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                <div class="d-flex my-2 my-lg-0">
+                    <input class="form-control me-sm-2" type="search" placeholder="Search">
                     <button onclick="location.href='./search.html';" class="btn  btn-danger my-2 my-sm-0" type="submit">أبحث</button>
                 </div>
                 </div>
@@ -99,12 +99,12 @@
             </div>
             <div class="card-body col-lg-5 col-sm-12 position-relative">
                 <small class="text-muted">
-                    <i class="fa-solid fa-film mr-4 ">
+                    <i class="fa-solid fa-film me-4 ">
                         <span>مشاهدة  500 </span>
                       </i>
                 </small>
                 <a class="px-3 py-2" href="#" >
-                    <img class="rounded-circle mr-2" width="30" src="../img/mostaql.png" alt="channel img">
+                    <img class="rounded-circle me-2" width="30" src="../img/mostaql.png" alt="channel img">
                     <span>خالد الهادي</span>
                 </a>
                 <a href="">
@@ -117,12 +117,12 @@
                   المطور في كروم كيف تستخدم ادوات المطور في كروم كيف تستخي كروم
                   </span></p>
                   <button onclick="showAllText()" id="showMore" class="btn btn-danger " >عرض المزيد</button>
-                <div class="botton--icon d-flex  position-absolute pl-3" style="bottom: 0; right: 0;">
-                    <div class="icons mr-3  " >
-                        <i title="احببتة" class="fa-solid fa-heart mr-2 "></i>
-                        <i title="المشاهدة لاحقا" class="fa-solid fa-clock mr-2"></i>
-                        <i title="مشاركة الفيديو" class="fa-solid fa-share-from-square mr-2"></i>
-                        <i title="أضافة الى قائمة التشغيل" class="fa-solid fa-circle-play mr-2"></i>
+                <div class="botton--icon d-flex  position-absolute ps-3" style="bottom: 0; right: 0;">
+                    <div class="icons me-3  " >
+                        <i title="احببتة" class="fa-solid fa-heart me-2 "></i>
+                        <i title="المشاهدة لاحقا" class="fa-solid fa-clock me-2"></i>
+                        <i title="مشاركة الفيديو" class="fa-solid fa-share-from-square me-2"></i>
+                        <i title="أضافة الى قائمة التشغيل" class="fa-solid fa-circle-play me-2"></i>
                     </div>
                     <p>أبلاغ</p>
                 </div>
@@ -136,7 +136,7 @@
         <!-- right site -->
             <div class="col-lg-7 order-1 order-lg-0 mt-4">
                 <div class="d-flex comments  " >
-                    <p class="mr-2 pt-3" >التعليقات 4</p> 
+                    <p class="me-2 pt-3" >التعليقات 4</p> 
                     <div class="btn-group" role="group">
                         <button id="btnGroupDrop1" type="button" class="btn px-4 border-0 bg-danger text-white btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             الترتيب بحسب
@@ -160,22 +160,22 @@
                             </div>
                             <div class="col-md-10">
                                 <p>
-                                    <a class="float-right text-dark pt-4 pb-2" href=""><b>خالد الهادي</b></a>
-                                    <span class="float-left"><i class="text-warning fa fa-star"></i></span>
-                                    <span class="float-left"><i class="text-warning fa fa-star"></i></span>
-                                    <span class="float-left"><i class="text-warning fa fa-star"></i></span>
-                                    <span class="float-left"><i class="text-warning fa fa-star"></i></span>
-                                    <span class="float-left"><i class="text-warning fa fa-star"></i></span>
+                                    <a class="float-end text-dark pt-4 pb-2" href=""><b>خالد الهادي</b></a>
+                                    <span class="float-start"><i class="text-warning fa fa-star"></i></span>
+                                    <span class="float-start"><i class="text-warning fa fa-star"></i></span>
+                                    <span class="float-start"><i class="text-warning fa fa-star"></i></span>
+                                    <span class="float-start"><i class="text-warning fa fa-star"></i></span>
+                                    <span class="float-start"><i class="text-warning fa fa-star"></i></span>
                                 </p>
                                 <div class="clearfix"></div>
                                 <p>شكرا خالد على الشرح الجميل ❤</p>
                                 <p>
-                                    <a class="float-right btn reply mt-3 btn-outline-primary mr-3"> <i class="fa fa-reply"></i> الردود</a>
-                                    <a class="float-right btn mt-3 text-white btn-danger"> <i class="fa fa-heart"></i> أعبجني </a>
+                                    <a class="float-end btn reply mt-3 btn-outline-primary me-3"> <i class="fa fa-reply"></i> الردود</a>
+                                    <a class="float-end btn mt-3 text-white btn-danger"> <i class="fa fa-heart"></i> أعبجني </a>
                                 </p>
                             </div>
                         </div>
-                        <div class="card ml-4 mt-3 card-inner d-none">
+                        <div class="card ms-4 mt-3 card-inner d-none">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-2">
@@ -186,8 +186,8 @@
                                         <p class="mt-3 mb-2 " ><a class="text-dark " href=""><strong>محمد صلاح </strong></a></p>
                                         <p class="" >اهلا خالد شكرا لتعليقك الجميل الذي مثل وجهك</p>
                                         <p>
-                                            <a class="float-right btn mt-3 btn-outline-primary mr-3">  <i class="fa fa-reply"></i> الردود</a>
-                                            <a class="float-right btn mt-3 text-white btn-danger"> <i class="fa fa-heart"></i> أعبجني</a>
+                                            <a class="float-end btn mt-3 btn-outline-primary me-3">  <i class="fa fa-reply"></i> الردود</a>
+                                            <a class="float-end btn mt-3 text-white btn-danger"> <i class="fa fa-heart"></i> أعبجني</a>
                                         </p>
                                     </div>
                                 </div>
@@ -204,22 +204,22 @@
                             </div>
                             <div class="col-md-10">
                                 <p>
-                                    <a class="float-right text-dark pt-4 pb-2" href=""><b>خالد الهادي</b></a>
-                                    <span class="float-left"><i class="text-warning fa fa-star"></i></span>
-                                    <span class="float-left"><i class="text-warning fa fa-star"></i></span>
-                                    <span class="float-left"><i class="text-warning fa fa-star"></i></span>
-                                    <span class="float-left"><i class="text-warning fa fa-star"></i></span>
-                                    <span class="float-left"><i class="text-warning fa fa-star"></i></span>
+                                    <a class="float-end text-dark pt-4 pb-2" href=""><b>خالد الهادي</b></a>
+                                    <span class="float-start"><i class="text-warning fa fa-star"></i></span>
+                                    <span class="float-start"><i class="text-warning fa fa-star"></i></span>
+                                    <span class="float-start"><i class="text-warning fa fa-star"></i></span>
+                                    <span class="float-start"><i class="text-warning fa fa-star"></i></span>
+                                    <span class="float-start"><i class="text-warning fa fa-star"></i></span>
                                 </p>
                                 <div class="clearfix"></div>
                                 <p>شكرا خالد على الشرح الجميل ❤</p>
                                 <p>
-                                    <a class="float-right reply btn mt-3 btn-outline-primary mr-3"> <i class="fa fa-reply"></i> الردود</a>
-                                    <a class="float-right btn mt-3 text-white btn-danger"> <i class="fa fa-heart"></i> أعبجني </a>
+                                    <a class="float-end reply btn mt-3 btn-outline-primary me-3"> <i class="fa fa-reply"></i> الردود</a>
+                                    <a class="float-end btn mt-3 text-white btn-danger"> <i class="fa fa-heart"></i> أعبجني </a>
                                 </p>
                             </div>
                         </div>
-                        <div class="card ml-4 mt-3 card-inner d-none">
+                        <div class="card ms-4 mt-3 card-inner d-none">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-2">
@@ -230,8 +230,8 @@
                                         <p class="mt-3 mb-2 " ><a class="text-dark " href=""><strong>محمد صلاح </strong></a></p>
                                         <p class="" >اهلا خالد شكرا لتعليقك الجميل الذي مثل وجهك</p>
                                         <p>
-                                            <a class="float-right btn mt-3 btn-outline-primary mr-3">  <i class="fa fa-reply"></i> الردود</a>
-                                            <a class="float-right btn mt-3 text-white btn-danger"> <i class="fa fa-heart"></i> أعبجني</a>
+                                            <a class="float-end btn mt-3 btn-outline-primary me-3">  <i class="fa fa-reply"></i> الردود</a>
+                                            <a class="float-end btn mt-3 text-white btn-danger"> <i class="fa fa-heart"></i> أعبجني</a>
                                         </p>
                                     </div>
                                 </div>
@@ -248,22 +248,22 @@
                             </div>
                             <div class="col-md-10">
                                 <p>
-                                    <a class="float-right text-dark pt-4 pb-2" href=""><b>خالد الهادي</b></a>
-                                    <span class="float-left"><i class="text-warning fa fa-star"></i></span>
-                                    <span class="float-left"><i class="text-warning fa fa-star"></i></span>
-                                    <span class="float-left"><i class="text-warning fa fa-star"></i></span>
-                                    <span class="float-left"><i class="text-warning fa fa-star"></i></span>
-                                    <span class="float-left"><i class="text-warning fa fa-star"></i></span>
+                                    <a class="float-end text-dark pt-4 pb-2" href=""><b>خالد الهادي</b></a>
+                                    <span class="float-start"><i class="text-warning fa fa-star"></i></span>
+                                    <span class="float-start"><i class="text-warning fa fa-star"></i></span>
+                                    <span class="float-start"><i class="text-warning fa fa-star"></i></span>
+                                    <span class="float-start"><i class="text-warning fa fa-star"></i></span>
+                                    <span class="float-start"><i class="text-warning fa fa-star"></i></span>
                                 </p>
                                 <div class="clearfix"></div>
                                 <p>شكرا خالد على الشرح الجميل ❤</p>
                                 <p>
-                                    <a class="float-right reply btn mt-3 btn-outline-primary mr-3"> <i class="fa fa-reply"></i> الردود</a>
-                                    <a class="float-right btn mt-3 text-white btn-danger"> <i class="fa fa-heart"></i> أعبجني </a>
+                                    <a class="float-end reply btn mt-3 btn-outline-primary me-3"> <i class="fa fa-reply"></i> الردود</a>
+                                    <a class="float-end btn mt-3 text-white btn-danger"> <i class="fa fa-heart"></i> أعبجني </a>
                                 </p>
                             </div>
                         </div>
-                        <div class="card ml-4 mt-3 card-inner d-none">
+                        <div class="card ms-4 mt-3 card-inner d-none">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-2">
@@ -274,8 +274,8 @@
                                         <p class="mt-3 mb-2 " ><a class="text-dark " href=""><strong>محمد صلاح </strong></a></p>
                                         <p class="" >اهلا خالد شكرا لتعليقك الجميل الذي مثل وجهك</p>
                                         <p>
-                                            <a class="float-right btn mt-3 btn-outline-primary mr-3">  <i class="fa fa-reply"></i> الردود</a>
-                                            <a class="float-right btn mt-3 text-white btn-danger"> <i class="fa fa-heart"></i> أعبجني</a>
+                                            <a class="float-end btn mt-3 btn-outline-primary me-3">  <i class="fa fa-reply"></i> الردود</a>
+                                            <a class="float-end btn mt-3 text-white btn-danger"> <i class="fa fa-heart"></i> أعبجني</a>
                                         </p>
                                     </div>
                                 </div>
@@ -293,7 +293,7 @@
                 <div class="my-3 col-md-12   ">
                     <div class="card  " >
                         <div class="card-horizontal d-md-flex p-2 p-sm-0">
-                            <div class="img-square-wrapper pr-4 pr-sm-0  ">
+                            <div class="img-square-wrapper pe-4 pe-sm-0  ">
                                 <a href="channel.html " >
                                     <img class="col-sm-12 p-sm-0 " src="../img/thumbnail/database.jpg" alt="Card image cap">
                                 </a>
@@ -303,11 +303,11 @@
                                     <h5 class="card-title text-dark mb-4">كيف تستخدم ادوات المطور في كروم</h5>
                                 </a>
                                 <small class="text-muted  ">
-                                    <i class="fa-solid fa-film mr-2 ">
+                                    <i class="fa-solid fa-film me-2 ">
                                         <span>مشاهدة  400 </span>
                                       </i>
                                     <a class="" href="#"  >
-                                        <img class="rounded-circle mr-2" width="30" src="../img/mostaql.png" alt="channel img">
+                                        <img class="rounded-circle me-2" width="30" src="../img/mostaql.png" alt="channel img">
                                         <span>خالد الهادي</span>
                                     </a>
                                 </small>
@@ -320,7 +320,7 @@
                 <div class="my-3 col-md-12   ">
                     <div class="card  " >
                         <div class="card-horizontal d-md-flex p-2 p-sm-0 ">
-                            <div class="img-square-wrapper pr-4 pr-sm-0 ">
+                            <div class="img-square-wrapper pe-4 pe-sm-0 ">
                                 <a href="channel.html " >
                                     <img class="col-sm-12 p-sm-0" src="../img/thumbnail/database.jpg" alt="Card image cap">
                                 </a>
@@ -330,7 +330,7 @@
                                     <h5 class="card-title text-dark mb-4">كيف تستخدم ادوات المطور في كروم</h5>
                                 </a>
                                 <small class="text-muted">
-                                    <i class="fa-solid fa-film mr-2 ">
+                                    <i class="fa-solid fa-film me-2 ">
                                         <span>مشاهدة  500 </span>
                                       </i>
                                     <a class="" href="#" >
@@ -347,7 +347,7 @@
                 <div class="my-3 col-md-12   ">
                     <div class="card  " >
                         <div class="card-horizontal d-md-flex p-2 p-sm-0  ">
-                            <div class="img-square-wrapper pr-4 pr-sm-0  ">
+                            <div class="img-square-wrapper pe-4 pe-sm-0  ">
                                 <a href="channel.html " >
                                     <img class="col-sm-12 p-sm-0" src="../img/thumbnail/database.jpg" alt="Card image cap">
                                 </a>
@@ -357,11 +357,11 @@
                                     <h5 class="card-title text-dark mb-4">كيف تستخدم ادوات المطور في كروم</h5>
                                 </a>
                                 <small class="text-muted">
-                                    <i class="fa-solid fa-film mr-4 ">
+                                    <i class="fa-solid fa-film me-4 ">
                                         <span>مشاهدة  500 </span>
                                       </i>
                                     <a class="" href="#" >
-                                        <img class="rounded-circle mr-2" width="30" src="../img/mostaql.png" alt="channel img">
+                                        <img class="rounded-circle me-2" width="30" src="../img/mostaql.png" alt="channel img">
                                         <span>خالد الهادي</span>
                                     </a>
                                 </small>
@@ -374,7 +374,7 @@
                 <div class="my-3 col-md-12   ">
                     <div class="card  " >
                         <div class="card-horizontal d-md-flex p-2 p-sm-0 ">
-                            <div class="img-square-wrapper pr-4 pr-sm-0  ">
+                            <div class="img-square-wrapper pe-4 pe-sm-0  ">
                                 <a href="channel.html " >
                                     <img class="col-sm-12 p-sm-0" src="../img/thumbnail/database.jpg" alt="Card image cap">
                                 </a>
@@ -384,11 +384,11 @@
                                     <h5 class="card-title text-dark mb-4">كيف تستخدم ادوات المطور في كروم</h5>
                                 </a>
                                 <small class="text-muted">
-                                    <i class="fa-solid fa-film mr-4 ">
+                                    <i class="fa-solid fa-film me-4 ">
                                         <span>مشاهدة  500 </span>
                                       </i>
                                     <a class="" href="#" >
-                                        <img class="rounded-circle mr-2" width="30" src="../img/mostaql.png" alt="channel img">
+                                        <img class="rounded-circle me-2" width="30" src="../img/mostaql.png" alt="channel img">
                                         <span>خالد الهادي</span>
                                     </a>
                                 </small>
@@ -401,7 +401,7 @@
                 <div class="my-3 col-md-12   ">
                     <div class="card  " >
                         <div class="card-horizontal d-md-flex p-2 p-sm-0 ">
-                            <div class="img-square-wrapper pr-4 pr-sm-0 ">
+                            <div class="img-square-wrapper pe-4 pe-sm-0 ">
                                 <a href="channel.html " >
                                     <img class="col-sm-12 p-sm-0" src="../img/thumbnail/database.jpg" alt="Card image cap">
                                 </a>
@@ -411,11 +411,11 @@
                                     <h5 class="card-title text-dark mb-4">كيف تستخدم ادوات المطور في كروم</h5>
                                 </a>
                                 <small class="text-muted">
-                                    <i class="fa-solid fa-film mr-4 ">
+                                    <i class="fa-solid fa-film me-4 ">
                                         <span>مشاهدة  500 </span>
                                       </i>
                                     <a class="" href="#" >
-                                        <img class="rounded-circle mr-2" width="30" src="../img/mostaql.png" alt="channel img">
+                                        <img class="rounded-circle me-2" width="30" src="../img/mostaql.png" alt="channel img">
                                         <span>خالد الهادي</span>
                                     </a>
                                 </small>
@@ -428,7 +428,7 @@
                 <div class="my-3 col-md-12   ">
                     <div class="card  " >
                         <div class="card-horizontal d-md-flex p-2 p-sm-0 ">
-                            <div class="img-square-wrapper pr-4 pr-sm-0 ">
+                            <div class="img-square-wrapper pe-4 pe-sm-0 ">
                                 <a href="channel.html " >
                                     <img class="col-sm-12 p-sm-0" src="../img/thumbnail/database.jpg" alt="Card image cap">
                                 </a>
@@ -438,11 +438,11 @@
                                     <h5 class="card-title text-dark mb-4">كيف تستخدم ادوات المطور في كروم</h5>
                                 </a>
                                 <small class="text-muted  ">
-                                    <i class="fa-solid fa-film mr-4 ">
+                                    <i class="fa-solid fa-film me-4 ">
                                         <span>مشاهدة  500 </span>
                                       </i>
                                     <a class="" href="#" >
-                                        <img class="rounded-circle mr-2" width="30" src="../img/mostaql.png" alt="channel img">
+                                        <img class="rounded-circle me-2" width="30" src="../img/mostaql.png" alt="channel img">
                                         <span>خالد الهادي</span>
                                     </a>
                                 </small>
