@@ -7033,6 +7033,7 @@ textarea.form-control-lg {
   left: 0;
   right: 0;
   z-index: 1030;
+  height: 80px;
 }
 
 .fixed-bottom {

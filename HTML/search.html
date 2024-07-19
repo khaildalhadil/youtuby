@@ -1,89 +1,127 @@
 <!DOCTYPE html>
 <html lang="ra" dir="rtl" >
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- links bootstrap style  -->
-    <link rel="stylesheet" href="../STYLE/bootstrap.rtl.css">
-    <!--  End of links bootstrap style  -->
+  <!-- links bootstrap style  -->
+  <link rel="stylesheet" href="../STYLE/bootstrap.rtl.css">
+  <!--  End of links bootstrap style  -->
 
-    <!-- our style  -->
-    <link rel="stylesheet" href="../STYLE/index.css">
-    <!-- End of our style  -->
+  <!-- our style  -->
+  <link rel="stylesheet" href="../STYLE/index.css">
+  <!-- End of our style  -->
+   
+  <!-- link icon awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- End of link icon awesome -->
 
-    <!-- link icon awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- End of link icon awesome -->
+
 
     <title>يوتيوبي | نتائج البحث</title>
 
 </head>
 <body>
-    <!-- nav bootstrap -->
-    <div id="top-menu">
-        <div class="container-fluid ">
-            <nav class="navbar navbar-expand-lg fixed-top navbar-light mb-5 bg-light p-3" >
-                <a class="navbar-brand" href="index.html">يوتيوبي</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+  <!-- nav bootstrap -->
+  <div id="top-menu">
+                
+    <!-- navbar -->
+    
+  <div class="navbar--ul">
+    <ul class="nav-list">
+    <li class="nav-item">
+      <a href="" class="nav-item__nav-link">الصفحه الرئيسية</a>
+      </li>
+  <li class="nav-item">
+    <a href="" class="nav-item__nav-link">الفيديوهات المقترحة</a>
+  </li>
+  <li class="nav-item">
+    <a href="" class="nav-item__nav-link">المرفوعة حديثا</a>
+  </li>
+  <li class="nav-item">
+    <a href="" class="nav-item__nav-link">سجل المشاهده</a>
+  </li>
+  <li class="nav-item">
+    <a href="" class="nav-item__nav-link">العاب الفيديو</a>
+  </li>
+  <li class="nav-item">
+    <a href="" class="nav-item__nav-link">الصفحه الرئيسية</a>
+  </li>
+  </ul>
+  </div>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mx-lg-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link" tabindex="4" href="index.html">الفيديوات المقترحة</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link ms-lg-3 " tabindex="3" href="#">المرفوعة حديثا</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link " href="#" tabindex="1" >الفيديوهات الرائجة</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link " href="#" data-toggle="modal" data-target="#loginModal" >تسجيل الدخول </a>
-                    </li>
-                  </ul>
-                  <div class="d-flex my-2 my-lg-0">
-                    <input class="form-control me-sm-2" type="search" placeholder="Search">
-                    <button class="btn  btn-danger my-2 my-sm-0" type="submit">أبحث</button>
-                  </div>
-                </div>
-            </nav>
+  <!-- End of navbar -->
+<div class="container-fluid ">
 
-                <!-- Modal -->
-            <div class="modal rtl fade" id="loginModal" data-backdrop="static" data-keyboard="false" tabindex="-1" >
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="staticBackdropLabel">تسجيل الدخول</h5>
-                            <button type="button" class="close" data-dismiss="modal">
-                                <span >&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="form-group">
-                                    <label for="email" class="col-form-label">البريد الاكتروني:</label>
-                                    <input type="email" class="form-control" id="email">
-                                </div>
-                                <div class="form-group">
-                                    <label for="password" class="col-form-label">كلمة المرور:</label>
-                                    <input type="password" class="form-control" id="recipient-name">
-                                </div>
-                                </form>
-                        </div>
-                        <div class="modal-footer">
-                            <a class="" href="">نسيت كلمة المرور</a>
-                            <a class="mx-auto" href="">أنشاء حساب</a>
-                            <button type="button" class="btn btn-outline-danger">دخول</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<nav class="navbar navbar-expand-lg  fixed-top navbar-light mb-5 bg-light px-2 " >
+<!-- <i class="fas fa-bars fa-lg" id="toggler" ></i> -->
+<div class="hamurger-menu">
+  <div class="line line-1"></div>
+  <div class="line line-2"></div>
+  <div class="line line-3"></div>
+</div>
+  <a class="navbar-brand  mx-3" href="index.html">
+    يوتيوبي
+    <span class="logo--youtube"  ><i  class="fas fa-play-circle" ></i></span>
+  </a>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mx-lg-auto">
+      <li class="nav-item me-4 active ">
+        <a class="nav-link active  p-3" tabindex="4" href="index.html">الفيديوات المقترحة</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link  p-3" tabindex="3" href="./log.html">المرفوعة حديثا</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link p-3" href="#" tabindex="1" >الفيديوهات الرائجة</a>
+      </li>
+    </ul>
+    <div class=" d-flex my-2 my-lg-0">
+      <input class="form-control me-sm-2" type="search" placeholder="Search">
+      <button onclick="location.href='./search.html';" class="btn  btn-danger my-2 my-sm-0" type="submit">أبحث</button>
     </div>
-    <!-- End of nav bootstrap -->
+  </div>
+  <i class="fas fa-search rm-4 search-icon"></i>
+  <a class="nav-link p-3 text-danger" href="#" data-toggle="modal" data-target="#loginModal" >تسجيل الدخول </a>
+</nav>
+<input type="search " placeholder="ابحث ..."  class="form-control search-input">
+</div>
+</div>
+<!-- End of nav bootstrap -->
+
+<!-- Modal -->
+<div class="modal rtl fade" id="loginModal" data-backdrop="static" data-keyboard="false" tabindex="-1" >
+<div class="modal-dialog modal-dialog-centered">
+  <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">تسجيل الدخول</h5>
+        <button type="button" class="close" data-dismiss="modal">
+            <span >&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <form>
+              <div class="form-group">
+                <label for="email" class="col-form-label">البريد الاكتروني:</label>
+                <input type="email" class="form-control" id="email">
+              </div>
+              <div class="form-group">
+                  <label for="password" class="col-form-label">كلمة المرور:</label>
+                  <input type="password" class="form-control" id="recipient-name">
+              </div>
+            </form>
+      </div>
+      <div class="modal-footer">
+          <a class="" href="">نسيت كلمة المرور</a>
+          <a class="mx-auto" href="">أنشاء حساب</a>
+          <button type="button" class="btn btn-outline-danger">دخول</button>
+      </div>
+  </div>
+</div>
+</div>
+<!-- End of Modal -->
+
 
     <!-- body  -->
     <div class="search-header mt-5 pt-5 ">
@@ -91,7 +129,7 @@
             <div class="row" >
                 <div class="col-6" >حاولي 80 نتيجة</div>
                 <div class="col-6 ms-auto" >
-                    <span class="float-start clear" >
+                    <span class=" float-end clear" >
                       <i class="fa-solid fa-filter"></i>
                       التصفية
                     </span>
@@ -200,7 +238,7 @@
                     <div class="card-horizontal d-md-flex">
                         <div class="img-square-wrapper position-relative ">
                             <a href="channel.html" >
-                                <img class="col-sm-12 p-sm-0" src="../img/thumbnail/devtools.jpg" alt="Card image cap">
+                                <img class="col-sm-12 w-50 p-sm-0" src="../img/channel--img/hq720 (4).jpg" alt="Card image cap">
                                 <time class="position-absolute p-1 px-2 me-2 mb-2 bg-dark text-white" style="left: 0; bottom: 0;  " >9:20</time>
                                 <i class="fas fa-play fa-2x position-absolute d-none" style="top: 46%; left: 48%" ></i>
                             </a>
@@ -228,164 +266,175 @@
             </div>
         </div>
         <div class="row">
-            <div class="my-3 col-md-12  ">
-                <div class="card  " >
-                    <div class="card-horizontal d-md-flex">
-                        <div class="img-square-wrapper ">
-                            <a href="channel.html">
-                                <img class="col-sm-12 p-sm-0" src="../img/thumbnail/devtools.jpg" alt="Card image cap">
-                            </a>
-                        </div>
-                        <div class="card-body ">
-                            <a href="">
-                                <h4 class="card-title">كيف تستخدم ادوات المطور في كروم</h4>
-                            </a>
-                            <p class="card-text">كيف تستخدم ادوات المطور في كروم كيف تستخدم ادوات المطور في كروم كيف تستخي كروم</p>
-                            <small class="text-muted">
-                                <i class="fa-solid fa-film me-4 ">
-                                  <span>مشاهدة  500 </span>
-                                </i>
-                                <i class="fa-solid fa-clock me-2 ">
-                                  <span>قبل 3 اشهر</span>
-                                </i>
-                                <a class="" href="#" >
-                                    <img class="rounded-circle me-2" width="30" src="../img/mostaql.png" alt="channel img">
-                                    <span>خالد الهادي</span>
-                                </a>
-                              </small>
-                        </div>
+          <div class="my-3 col-md-12  ">
+              <div class="card  " >
+                  <div class="card-horizontal d-md-flex">
+                      <div class="img-square-wrapper position-relative ">
+                          <a href="channel.html" >
+                              <img class="col-sm-12 p-sm-0" src="../img/channel--img/hq720 (5).jpg" alt="Card image cap">
+                              <time class="position-absolute p-1 px-2 me-2 mb-2 bg-dark text-white" style="left: 0; bottom: 0;  " >9:20</time>
+                              <i class="fas fa-play fa-2x position-absolute d-none" style="top: 46%; left: 48%" ></i>
+                          </a>
+                      </div>
+                      <div class="card-body ">
+                          <a href="">
+                              <h4 class="card-title">كيف تستخدم ادوات المطور في كروم</h4>
+                          </a>
+                          <p class="card-text text-NoWrap">كيف تستخدم ادوات المطور في كروم كيف تستخدم ادوات المطور في ف تستخي كروم</p>
+                          <small class="text-muted">
+                              <i class="fa-solid fa-film me-4 ">
+                                <span>مشاهدة  500 </span>
+                              </i>
+                              <i class="fa-solid fa-clock me-2 ">
+                                <span>قبل 3 اشهر</span>
+                              </i>
+                              <a class="" href="#" >
+                                  <img class="rounded-circle me-2" width="30" src="../img/mostaql.png" alt="channel img">
+                                  <span>خالد الهادي</span>
+                              </a>
+                            </small>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+        <div class="my-3 col-md-12  ">
+            <div class="card  " >
+                <div class="card-horizontal d-md-flex">
+                    <div class="img-square-wrapper position-relative ">
+                        <a href="channel.html" >
+                            <img class="col-sm-12 p-sm-0" src="../img/channel--img/hq720 (6).jpg" alt="Card image cap">
+                            <time class="position-absolute p-1 px-2 me-2 mb-2 bg-dark text-white" style="left: 0; bottom: 0;  " >9:20</time>
+                            <i class="fas fa-play fa-2x position-absolute d-none" style="top: 46%; left: 48%" ></i>
+                        </a>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="my-3 col-md-12  ">
-                <div class="card  " >
-                    <div class="card-horizontal d-md-flex">
-                        <div class="img-square-wrapper ">
-                            <a href="watch.html">
-                                <img class="col-sm-12 p-sm-0" src="../img/thumbnail/devtools.jpg" alt="Card image cap">
+                    <div class="card-body ">
+                        <a href="">
+                            <h4 class="card-title">كيف تستخدم ادوات المطور في كروم</h4>
+                        </a>
+                        <p class="card-text text-NoWrap">كيف تستخدم ادوات المطور في كروم كيف تستخدم ادوات المطور في ف تستخي كروم</p>
+                        <small class="text-muted">
+                            <i class="fa-solid fa-film me-4 ">
+                              <span>مشاهدة  500 </span>
+                            </i>
+                            <i class="fa-solid fa-clock me-2 ">
+                              <span>قبل 3 اشهر</span>
+                            </i>
+                            <a class="" href="#" >
+                                <img class="rounded-circle me-2" width="30" src="../img/mostaql.png" alt="channel img">
+                                <span>خالد الهادي</span>
                             </a>
-                        </div>
-                        <div class="card-body ">
-                            <a href="">
-                                <h4 class="card-title">كيف تستخدم ادوات المطور في كروم</h4>
-                            </a>
-                            <p class="card-text">كيف تستخدم ادوات المطور في كروم كيف تستخدم ادوات المطور في كروم كيف تستخي كروم</p>
-                            <small class="text-muted">
-                                <i class="fa-solid fa-film me-4 ">
-                                  <span>مشاهدة  500 </span>
-                                </i>
-                                <i class="fa-solid fa-clock me-2 ">
-                                  <span>قبل 3 اشهر</span>
-                                </i>
-                                <a class="" href="#" >
-                                    <img class="rounded-circle me-2" width="30" src="../img/mostaql.png" alt="channel img">
-                                    <span>خالد الهادي</span>
-                                </a>
-                              </small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="my-3 col-md-12  ">
-                <div class="card  " >
-                    <div class="card-horizontal d-md-flex">
-                        <div class="img-square-wrapper ">
-                            <a href="watch.html">
-                                <img class="col-sm-12 p-sm-0" src="../img/thumbnail/devtools.jpg" alt="Card image cap">
-                            </a>
-                        </div>
-                        <div class="card-body ">
-                            <a href="">
-                                <h4 class="card-title">كيف تستخدم ادوات المطور في كروم</h4>
-                            </a>
-                            <p class="card-text">كيف تستخدم ادوات المطور في كروم كيف تستخدم ادوات المطور في كروم كيف تستخي كروم</p>
-                            <small class="text-muted">
-                                <i class="fa-solid fa-film me-4 ">
-                                  <span>مشاهدة  500 </span>
-                                </i>
-                                <i class="fa-solid fa-clock me-2 ">
-                                  <span>قبل 3 اشهر</span>
-                                </i>
-                                <a class="" href="#" >
-                                    <img class="rounded-circle me-2" width="30" src="../img/mostaql.png" alt="channel img">
-                                    <span>خالد الهادي</span>
-                                </a>
-                              </small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="my-3 col-md-12  ">
-                <div class="card  " >
-                    <div class="card-horizontal d-md-flex">
-                        <div class="img-square-wrapper ">
-                            <a href="watch.html">
-                                <img class="col-sm-12 p-sm-0" src="../img/thumbnail/devtools.jpg" alt="Card image cap">
-                            </a>
-                        </div>
-                        <div class="card-body ">
-                            <a href="">
-                                <h4 class="card-title">كيف تستخدم ادوات المطور في كروم</h4>
-                            </a>
-                            <p class="card-text">كيف تستخدم ادوات المطور في كروم كيف تستخدم ادوات المطور في كروم كيف تستخي كروم</p>
-                            <small class="text-muted">
-                                <i class="fa-solid fa-film me-4 ">
-                                  <span>مشاهدة  500 </span>
-                                </i>
-                                <i class="fa-solid fa-clock me-2 ">
-                                  <span>قبل 3 اشهر</span>
-                                </i>
-                                <a class="" href="#" >
-                                    <img class="rounded-circle me-2" width="30" src="../img/mostaql.png" alt="channel img">
-                                    <span>خالد الهادي</span>
-                                </a>
-                              </small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="my-3 col-md-12  ">
-                <div class="card  " >
-                    <div class="card-horizontal d-md-flex">
-                        <div class="img-square-wrapper ">
-                            <a href="watch.html">
-                                <img class="col-sm-12 p-sm-0" src="../img/thumbnail/devtools.jpg" alt="Card image cap">
-                            </a>
-                        </div>
-                        <div class="card-body ">
-                            <a href="">
-                                <h4 class="card-title">كيف تستخدم ادوات المطور في كروم</h4>
-                            </a>
-                            <p class="card-text">كيف تستخدم ادوات المطور في كروم كيف تستخدم ادوات المطور في كروم كيف تستخي كروم</p>
-                            <small class="text-muted">
-                                <i class="fa-solid fa-film me-4 ">
-                                  <span>مشاهدة  500 </span>
-                                </i>
-                                <i class="fa-solid fa-clock me-2 ">
-                                  <span>قبل 3 اشهر</span>
-                                </i>
-                                <a class="" href="#" >
-                                    <img class="rounded-circle me-2" width="30" src="../img/mostaql.png" alt="channel img">
-                                    <span>خالد الهادي</span>
-                                </a>
-                              </small>
-                        </div>
+                          </small>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- End of cards body -->
-
-    <!-- End of body  -->
+    <div class="row">
+      <div class="my-3 col-md-12  ">
+          <div class="card  " >
+              <div class="card-horizontal d-md-flex">
+                  <div class="img-square-wrapper position-relative ">
+                      <a href="channel.html" >
+                          <img class="col-sm-12 p-sm-0" src="../img/channel--img/hq720 (7).jpg" alt="Card image cap">
+                          <time class="position-absolute p-1 px-2 me-2 mb-2 bg-dark text-white" style="left: 0; bottom: 0;  " >9:20</time>
+                          <i class="fas fa-play fa-2x position-absolute d-none" style="top: 46%; left: 48%" ></i>
+                      </a>
+                  </div>
+                  <div class="card-body ">
+                      <a href="">
+                          <h4 class="card-title">كيف تستخدم ادوات المطور في كروم</h4>
+                      </a>
+                      <p class="card-text text-NoWrap">كيف تستخدم ادوات المطور في كروم كيف تستخدم ادوات المطور في ف تستخي كروم</p>
+                      <small class="text-muted">
+                          <i class="fa-solid fa-film me-4 ">
+                            <span>مشاهدة  500 </span>
+                          </i>
+                          <i class="fa-solid fa-clock me-2 ">
+                            <span>قبل 3 اشهر</span>
+                          </i>
+                          <a class="" href="#" >
+                              <img class="rounded-circle me-2" width="30" src="../img/mostaql.png" alt="channel img">
+                              <span>خالد الهادي</span>
+                          </a>
+                        </small>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="row">
+    <div class="my-3 col-md-12  ">
+        <div class="card  " >
+            <div class="card-horizontal d-md-flex">
+                <div class="img-square-wrapper position-relative ">
+                    <a href="channel.html" >
+                        <img class="col-sm-12 p-sm-0" src="../img/channel--img/hq720 (8).jpg" alt="Card image cap">
+                        <time class="position-absolute p-1 px-2 me-2 mb-2 bg-dark text-white" style="left: 0; bottom: 0;  " >9:20</time>
+                        <i class="fas fa-play fa-2x position-absolute d-none" style="top: 46%; left: 48%" ></i>
+                    </a>
+                </div>
+                <div class="card-body ">
+                    <a href="">
+                        <h4 class="card-title">كيف تستخدم ادوات المطور في كروم</h4>
+                    </a>
+                    <p class="card-text text-NoWrap">كيف تستخدم ادوات المطور في كروم كيف تستخدم ادوات المطور في ف تستخي كروم</p>
+                    <small class="text-muted">
+                        <i class="fa-solid fa-film me-4 ">
+                          <span>مشاهدة  500 </span>
+                        </i>
+                        <i class="fa-solid fa-clock me-2 ">
+                          <span>قبل 3 اشهر</span>
+                        </i>
+                        <a class="" href="#" >
+                            <img class="rounded-circle me-2" width="30" src="../img/mostaql.png" alt="channel img">
+                            <span>خالد الهادي</span>
+                        </a>
+                      </small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+  <div class="my-3 col-md-12  ">
+      <div class="card  " >
+          <div class="card-horizontal d-md-flex">
+              <div class="img-square-wrapper position-relative ">
+                  <a href="channel.html" >
+                      <img class="col-sm-12 p-sm-0" src="../img/channel--img/hq720.jpg" alt="Card image cap">
+                      <time class="position-absolute p-1 px-2 me-2 mb-2 bg-dark text-white" style="left: 0; bottom: 0;  " >9:20</time>
+                      <i class="fas fa-play fa-2x position-absolute d-none" style="top: 46%; left: 48%" ></i>
+                  </a>
+              </div>
+              <div class="card-body ">
+                  <a href="">
+                      <h4 class="card-title">كيف تستخدم ادوات المطور في كروم</h4>
+                  </a>
+                  <p class="card-text text-NoWrap">كيف تستخدم ادوات المطور في كروم كيف تستخدم ادوات المطور في ف تستخي كروم</p>
+                  <small class="text-muted">
+                      <i class="fa-solid fa-film me-4 ">
+                        <span>مشاهدة  500 </span>
+                      </i>
+                      <i class="fa-solid fa-clock me-2 ">
+                        <span>قبل 3 اشهر</span>
+                      </i>
+                      <a class="" href="#" >
+                          <img class="rounded-circle me-2" width="30" src="../img/mostaql.png" alt="channel img">
+                          <span>خالد الهادي</span>
+                      </a>
+                    </small>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+    </div>
+    
+    <!-- set js i will work init  -->
+    <script src="../JS/index.js"></script>
+    <!-- End js i will work init  -->
     
     <!-- set bootstrap js  -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

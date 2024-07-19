@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: 'cairoFont';
   src: url('../fonts/Cairo-SemiBold.ttf')
@@ -193,4 +199,118 @@ a {
 
 .remove {
   cursor: pointer;
+}
+
+/* sitebar */
+
+
+.container-o {
+
+}
+
+.hamurger-menu {
+  width: 35px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  z-index: 9999999 !important;
+  /* margin: 20px 40px; */
+}
+
+.change {
+  right: 0 !important;
+}
+
+.line {
+  background-color: #dc3545;
+  width: 100%;
+  height: 15%;
+  border-radius: 10px;
+  transition: .5s;
+}
+
+.change .line-1 {
+  transform: rotateZ(-405deg) translate(-8px, 6px) ;
+}
+
+.change .line-2 {
+  opacity: 0;
+}
+
+.change .line-3 {
+  transform: rotateZ(405deg) translate(-8px, -6px) !important;
+}
+
+.navbar--ul {
+  position: fixed;
+  top: 100px;
+  right: -300px;
+  width: 300px;
+  height: 100%;
+  background-color: #dc3545;
+  z-index: 99999 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20% 0 0 20%;
+  transition: .7s  cubic-bezier(1, 0, 0, 1);
+}
+
+.nav-list {
+
+}
+
+.nav-item {
+  list-style: none;
+  margin: 25px;
+}
+
+.nav-item__nav-link {
+  text-decoration: none;
+  font-size: 22px;
+  color: #eee !important;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+  
+}
+
+.nav-item__nav-link::before,
+.nav-item__nav-link::after {
+  content: '';
+  width: 100%;
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 0;
+  transform: scale(0);
+  transition: .4s;
+}
+
+.nav-item__nav-link::before {
+  bottom: 0;
+  transform-origin: right;
+}
+
+.nav-item__nav-link::after {
+  top: 0;
+  transform-origin: left;
+}
+
+.nav-item__nav-link:hover:before,
+.nav-item__nav-link:hover::after {
+  transform: scale(1)
+}
+
+
+/* End of sitebar */
+
+.close {
+  margin-right: auto;
+  background-color: #fff;
+  border: none;
+  font-size: 18px !important;
 }

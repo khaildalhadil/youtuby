@@ -1,22 +1,12 @@
 
 
 // init html el
-const logoYoutub = document.querySelector('#toggler');
-const sidebar = document.querySelector('.sidebar');
-const searchIcon = document.querySelector('.search-icon');
 const searchInput = document.querySelector('.search-input');
+const hamurgerMenu = document.querySelector('.hamurger-menu');
+const navbarUl = document.querySelector('.navbar--ul');
 
-
-
-// toggle seitpar
-logoYoutub.addEventListener('click', ()=> {
-  sidebar.classList.toggle('show')
+hamurgerMenu.addEventListener('click', () => {
+  hamurgerMenu.classList.toggle('change');
+  navbarUl.classList.toggle('change');
 })
-
-// toggle input bar
-searchIcon.addEventListener('click', ()=> {
-  searchInput.classList.toggle('hidden--input--top')
-})
-
-
 

@@ -19,71 +19,105 @@
     <title>يوتيوبي</title>
 </head>
 <body >
-<!-- nav bootstrap -->
-<div id="top-menu">
-    <div class="container-fluid ">
-      <nav class="navbar navbar-expand-lg fixed-top navbar-light mb-5 bg-light p-3 " >
-          <a class="navbar-brand" href="index.html">يوتيوبي</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-lg-auto">
-              <li class="nav-item ">
-                <a class="nav-link active" tabindex="4" href="index.html">الفيديوات المقترحة</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link ms-lg-3 " tabindex="3" href="#">المرفوعة حديثا</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="#" tabindex="1" >الفيديوهات الرائجة</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link p-2 " href="#" data-toggle="modal" data-target="#loginModal" >تسجيل الدخول </a>
-              </li>
-            </ul>
-            <div class="d-flex my-2 my-lg-0">
-              <input class="form-control me-sm-2" type="search" placeholder="Search">
-              <button onclick="location.href='./search.html';" class="btn  btn-danger my-2 my-sm-0" type="submit">أبحث</button>
-            </div>
-          </div>
-      </nav>
+  <!-- nav bootstrap -->
+  <div id="top-menu">
+                
+    <!-- navbar -->
+    
+<div class="navbar--ul">
+<ul class="nav-list">
+<li class="nav-item">
+  <a href="" class="nav-item__nav-link">الصفحه الرئيسية</a>
+</li>
+<li class="nav-item">
+  <a href="" class="nav-item__nav-link">الفيديوهات المقترحة</a>
+</li>
+<li class="nav-item">
+  <a href="" class="nav-item__nav-link">المرفوعة حديثا</a>
+</li>
+<li class="nav-item">
+  <a href="" class="nav-item__nav-link">سجل المشاهده</a>
+</li>
+<li class="nav-item">
+  <a href="" class="nav-item__nav-link">الاشتراكات</a>
+</li>
+<li class="nav-item">
+  <a href="" class="nav-item__nav-link">العاب الفيديو</a>
+</li>
+</ul>
+</div>
+
+  <!-- End of navbar -->
+<div class="container-fluid ">
+
+<nav class="navbar navbar-expand-lg  fixed-top navbar-light mb-5 bg-light px-2 " >
+<!-- <i class="fas fa-bars fa-lg" id="toggler" ></i> -->
+<div class="hamurger-menu">
+  <div class="line line-1"></div>
+  <div class="line line-2"></div>
+  <div class="line line-3"></div>
+</div>
+  <a class="navbar-brand  mx-3" href="index.html">
+    يوتيوبي
+    <span class="logo--youtube"  ><i  class="fas fa-play-circle" ></i></span>
+  </a>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mx-lg-auto">
+      <li class="nav-item me-4 active ">
+        <a class="nav-link active  p-3" tabindex="4" href="index.html">الفيديوات المقترحة</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link  p-3" tabindex="3" href="./log.html">المرفوعة حديثا</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link p-3" href="#" tabindex="1" >الفيديوهات الرائجة</a>
+      </li>
+    </ul>
+    <div class=" d-flex my-2 my-lg-0">
+      <input class="form-control me-sm-2" type="search" placeholder="Search">
+      <button onclick="location.href='./search.html';" class="btn  btn-danger my-2 my-sm-0" type="submit">أبحث</button>
     </div>
   </div>
-  <!-- End of nav bootstrap -->
+  <i class="fas fa-search rm-4 search-icon"></i>
+  <a class="nav-link p-3 text-danger" href="#" data-toggle="modal" data-target="#loginModal" >تسجيل الدخول </a>
+</nav>
+<input type="search " placeholder="ابحث ..."  class="form-control search-input">
+</div>
+</div>
+<!-- End of nav bootstrap -->
 
-  <!-- Modal -->
-  <div class="modal rtl fade" id="loginModal" data-backdrop="static" data-keyboard="false" tabindex="-1" >
-      <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h5 class="modal-title" id="staticBackdropLabel">تسجيل الدخول</h5>
-                  <button type="button" class="close" data-dismiss="modal">
-                      <span >&times;</span>
-                  </button>
+<!-- Modal -->
+<div class="modal rtl fade" id="loginModal" data-backdrop="static" data-keyboard="false" tabindex="-1" >
+<div class="modal-dialog modal-dialog-centered">
+  <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">تسجيل الدخول</h5>
+        <button type="button" class="close" data-dismiss="modal">
+            <span >&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <form>
+              <div class="form-group">
+                <label for="email" class="col-form-label">البريد الاكتروني:</label>
+                <input type="email" class="form-control" id="email">
               </div>
-              <div class="modal-body">
-                <form>
-                  <div class="form-group">
-                    <label for="email" class="col-form-label">البريد الاكتروني:</label>
-                    <input type="email" class="form-control" id="email">
-                  </div>
-                  <div class="form-group">
-                    <label for="password" class="col-form-label">كلمة المرور:</label>
-                    <input type="password" class="form-control" id="recipient-name">
-                  </div>
-                </form>
+              <div class="form-group">
+                  <label for="password" class="col-form-label">كلمة المرور:</label>
+                  <input type="password" class="form-control" id="recipient-name">
               </div>
-              <div class="modal-footer">
-                <a class="" href="">نسيت كلمة المرور</a>
-                <a class="mx-auto" href="">أنشاء حساب</a>
-                <button type="button" class="btn btn-outline-danger">دخول</button>
-              </div>
-          </div>
+            </form>
+      </div>
+      <div class="modal-footer">
+          <a class="" href="">نسيت كلمة المرور</a>
+          <a class="mx-auto" href="">أنشاء حساب</a>
+          <button type="button" class="btn btn-outline-danger">دخول</button>
       </div>
   </div>
-  <!-- End of Modal -->
+</div>
+</div>
+<!-- End of Modal -->
+
 
 
 
@@ -92,11 +126,11 @@
       <div class="container-fluid">
         <div class="row">
           <div class="banner mt-5  position-relative fixed-bottom fixed-left ">
-            <img src="../img/h-channel.jpg" alt="" class="img-fluid mt-2"">
-            <div class=" bg-secondary p-1 scoial-media position-absolute button left" style="bottom: 15px; left: 0;" >
-              <a href="" class="text-black-50" title="101" >
+            <img src="../img/channel--img/channels4_banner.jpg" alt="" class="img-fluid mt-2 w-100 pt-4 ">
+            <div class="  p-1 scoial-media position-absolute button left" style="bottom: 15px; left: 12px;" >
+              <a href="" class="text-black-50 text-white " title="101" >
                 <img src="../img/icons/hsoub.png" alt="">
-                khaild alhadi 101
+                <span class="text-white" >khaild alhadi 101</span>
               </a>
               <a href="" title="101" >
                 <img src="../img/icons/facebook.png" title="facebook" class="me-1" alt="">
@@ -109,7 +143,7 @@
               </a>
             </div>
             <div class="follow position-absolute ms-3" style="bottom: 15px; right: 0;">
-              <button  class="btn btn-info">أشتراك 2000</button>
+              <button  class="btn text-white">أشتراك 2000</button>
             </div>
           </div>
         </div>
@@ -117,7 +151,7 @@
         <div class="row">
           <nav class="navbar navbar-expand-sm w-100  navbar-light mb-2 bg-light p-sm-0 pt-sm-2" >
          
-            <ul class="navbar-nav mx-auto d-block p-0">
+            <ul class="navbar-nav d-flex mx-auto d-block p-0">
               <li class="nav-item me-1 ">
                 <a class="nav-link bg-danger text-white " tabindex="4" href="#">الصفحة الرئيسة</a>
               </li>
@@ -171,13 +205,13 @@
 
         <div class="row">
           <div class="container my-5 mx-auto" >
-            <h5 class="text-info my-5 ">أخر الفيديوهات المرفوعة</h5>
+            <h5 class="text-info my-5 text-danger">أخر الفيديوهات المرفوعة</h5>
             <!-- fires Card -->
             <div class="row  " >
               <div class=" col-sm-6 col-md-4 col-xl-3" >
                 <div class="card mb-4">
                   <a href="watch.html">
-                    <img src="../img/thumbnail/restful.jpg" class="card-img-top" alt="card imgage">
+                    <img src="../img/channel--img/hq720 (4).jpg" class="card-img-top" alt="card imgage">
                     <div class="card-body p-2">
                       <p class="card-text">ربي العربيه رالعربيهالعربيهالعرب=ه ه العربيه</p>
                     </div>
@@ -398,8 +432,9 @@
 
 
     <!-- set js i will work init  -->
-    <script src="main.js"></script>
+    <script src="../JS/index.js"></script>
     <!-- End js i will work init  -->
+    
 
     <!-- set bootstrap js  -->
     <!-- <script src="../JS/bootstrap.bundle.min.js"></script>
