@@ -1,0 +1,7 @@
+.card:hover {
+  transform: translateY(0px) !important;
+}
+
+video {
+  cursor: pointer;
+}

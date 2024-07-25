@@ -10,6 +10,7 @@
       
     <!-- our style  -->
     <link rel="stylesheet" href="../STYLE/index.css">
+    <link rel="stylesheet" href="../STYLE/card.css">
     <!-- End of our style  -->
 
     <!-- link icon awesome -->
@@ -62,11 +63,11 @@
   </a>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mx-lg-auto">
-      <li class="nav-item me-4 active ">
-        <a class="nav-link active  p-3" tabindex="4" href="index.html">الفيديوات المقترحة</a>
+      <li class="nav-item me-4  ">
+        <a class="nav-link p-3" tabindex="4" href="index.html">الفيديوات المقترحة</a>
       </li>
-      <li class="nav-item ">
-        <a class="nav-link  p-3" tabindex="3" href="./log.html">المرفوعة حديثا</a>
+      <li class="nav-item active">
+        <a class="nav-link active p-3" tabindex="3" href="./log.html">المرفوعة حديثا</a>
       </li>
       <li class="nav-item ">
         <a class="nav-link p-3" href="#" tabindex="1" >الفيديوهات الرائجة</a>
@@ -123,7 +124,7 @@
     <div class="history-page">
         <div class="container">
             <div class="row container mt-5  pt-5 mx-auto">
-              <div class="col-3 bg-white my-3  list-of-date" >
+              <div class="col-3 bg-white my-3  col-12 col-md-3 list-of-date" >
                 <input type="search" placeholder="أبحث في التاريخ" class="border-0 form-control my-3 " >
                 <hr>
                 <div class="list-group pe-0 mt-4 border-0 list-group-flush  " id="list-tab" role="tablist">
@@ -142,14 +143,14 @@
                 </div>
               </div>
 
-                <div class="col-9 ">
+                <div class="col-12 col-md-9">
                     <div class="row " id="first__card">
-                        <div class=" col-md-12  ">
+                        <div class=" col-md-12   ">
                             <div class="card mb-3 " >
-                                <div class="card-horizontal d-md-flex">
-                                    <div class="img-square-wrapper w-50 p-2 position-relative">
+                                <div class="card-horizontal d-lg-flex">
+                                    <div class="img-square-wrapper col-lg-5 col-12  position-relative">
                                         <a href="watch.html">
-                                          <img class="col-sm-12 p-sm-0 " src="../img/thumbnail/devtools.jpg" alt="Card image cap">
+                                          <img class="col-sm-12 p-sm-0 " src="../img/channel--img/hq720 (4).jpg" alt="Card image cap">
                                           <time class="position-absolute p-1 px-2 me-2 mb-2 bg-dark text-white" style="left: 0; bottom: 0;  " >9:20</time>
                                           <i class="fas fa-play fa-2x position-absolute d-none" style="top: 46%; left: 48%" ></i>
                                         </a>
@@ -162,7 +163,7 @@
                                         <p class="card-text">كيف تستخدم ادوات المطور في كروم كيف تستخدم ادوات المطور في كروم كيف تستخي كروم</p>
                                         <small class="text-muted">
                                             <i class="fa-solid fa-film me-4 ">
-                                              <span>مشاهدة  500 </span>
+                                              <span>مشاهدة0 </span>
                                             </i>
                                             <i class="fa-solid fa-clock me-2 ">
                                               <span>قبل 3 اشهر</span>
@@ -177,102 +178,176 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row" id="seconde__card">
-                        <div class="my-3 col-md-12  ">
-                            <div class="card  " >
-                                <div class="card-horizontal d-md-flex">
-                                    <div class="img-square-wrapper position-relative ">
-                                      <span class="position-absolute x" style="top: 2px; right: 14px; z-index: 1; font-size: 25px;" >x</span>
-                                        <a href="watch.html">
-                                            <img class="col-sm-12  p-sm-0" src="../img/thumbnail/devtools.jpg" alt="Card image cap">
+                    <div class="row " id="first__card">
+                      <div class=" col-md-12  ">
+                          <div class="card mb-3 " >
+                              <div class="card-horizontal  d-lg-flex">
+                                  <div class="img-square-wrapper col-lg-5 col-12   p-2 position-relative">
+                                      <a href="watch.html">
+                                        <img class="col-sm-12 p-sm-0 " src="../img/channel--img/hq720 (5).jpg" alt="Card image cap">
+                                        <time class="position-absolute p-1 px-2 me-2 mb-2 bg-dark text-white" style="left: 0; bottom: 0;  " >9:20</time>
+                                        <i class="fas fa-play fa-2x position-absolute d-none" style="top: 46%; left: 48%" ></i>
+                                      </a>
+                                      <i class="fas fa-times remove position-absolute" style="top: 15px; right: 15px; z-index: 10" ></i>
+                                  </div>
+                                  <div class="card-body ">
+                                      <a href="">
+                                          <h4 class="card-title">كيف تستخدم ادوات المطور في كروم</h4>
+                                      </a>
+                                      <p class="card-text">كيف تستخدم ادوات المطور في كروم كيف تستخدم ادوات المطور في كروم كيف تستخي كروم</p>
+                                      <small class="text-muted">
+                                          <i class="fa-solid fa-film me-4 ">
+                                            <span>مشاهدة0 </span>
+                                          </i>
+                                          <i class="fa-solid fa-clock me-2 ">
+                                            <span>قبل 3 اشهر</span>
+                                          </i>
+                                          <a class="" href="#" >
+                                              <img class="rounded-circle me-2" width="30" src="../img/mostaql.png" alt="channel img">
+                                              <span>خالد الهادي</span>
+                                          </a>
+                                        </small>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row " id="first__card">
+                    <div class=" col-md-12  ">
+                        <div class="card mb-3 " >
+                            <div class="card-horizontal d-lg-flex">
+                                <div class="img-square-wrapper col-lg-5 col-12  p-2 position-relative">
+                                    <a href="watch.html">
+                                      <img class="col-sm-12 p-sm-0 " src="../img/channel--img/hq720 (6).jpg" alt="Card image cap">
+                                      <time class="position-absolute p-1 px-2 me-2 mb-2 bg-dark text-white" style="left: 0; bottom: 0;  " >9:20</time>
+                                      <i class="fas fa-play fa-2x position-absolute d-none" style="top: 46%; left: 48%" ></i>
+                                    </a>
+                                    <i class="fas fa-times remove position-absolute" style="top: 15px; right: 15px; z-index: 10" ></i>
+                                </div>
+                                <div class="card-body ">
+                                    <a href="">
+                                        <h4 class="card-title">كيف تستخدم ادوات المطور في كروم</h4>
+                                    </a>
+                                    <p class="card-text">كيف تستخدم ادوات المطور في كروم كيف تستخدم ادوات المطور في كروم كيف تستخي كروم</p>
+                                    <small class="text-muted">
+                                        <i class="fa-solid fa-film me-4 ">
+                                          <span>مشاهدة0 </span>
+                                        </i>
+                                        <i class="fa-solid fa-clock me-2 ">
+                                          <span>قبل 3 اشهر</span>
+                                        </i>
+                                        <a class="" href="#" >
+                                            <img class="rounded-circle me-2" width="30" src="../img/mostaql.png" alt="channel img">
+                                            <span>خالد الهادي</span>
                                         </a>
-                                    </div>
-                                    <div class="card-body ">
-                                        <a href="">
-                                            <h4 class="card-title">كيف تستخدم ادوات المطور في كروم</h4>
-                                        </a>
-                                        <p class="card-text">كيف تستخدم ادوات المطور في كروم كيف تستخدم ادوات المطور في كروم كيف تستخي كروم</p>
-                                        <small class="text-muted">
-                                            <i class="fa-solid fa-film me-4 ">
-                                              <span>مشاهدة  500 </span>
-                                            </i>
-                                            <i class="fa-solid fa-clock me-2 ">
-                                              <span>قبل 3 اشهر</span>
-                                            </i>
-                                            <a class="" href="#" >
-                                                <img class="rounded-circle me-2" width="30" src="../img/mostaql.png" alt="channel img">
-                                                <span>خالد الهادي</span>
-                                            </a>
-                                          </small>
-                                    </div>
+                                      </small>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row" id="third__card">
-                        <div class="my-3 col-md-12  ">
-                            <div class="card  " >
-                                <div class="card-horizontal d-md-flex">
-                                    <div class="img-square-wrapper position-relative">
-                                      <span class="position-absolute x" style="top: 2px; right: 14px; z-index: 1; font-size: 25px;" >x</span>
-                                        <a href="watch.html">
-                                            <img class="col-sm-12  p-sm-0" src="../img/thumbnail/devtools.jpg" alt="Card image cap">
-                                        </a>
-                                    </div>
-                                    <div class="card-body ">
-                                        <a href="">
-                                            <h4 class="card-title">كيف تستخدم ادوات المطور في كروم</h4>
-                                        </a>
-                                        <p class="card-text">كيف تستخدم ادوات المطور في كروم كيف تستخدم ادوات المطور في كروم كيف تستخي كروم</p>
-                                        <small class="text-muted">
-                                            <i class="fa-solid fa-film me-4 ">
-                                              <span>مشاهدة  500 </span>
-                                            </i>
-                                            <i class="fa-solid fa-clock me-2 ">
-                                              <span>قبل 3 اشهر</span>
-                                            </i>
-                                            <a class="" href="#" >
-                                                <img class="rounded-circle me-2" width="30" src="../img/mostaql.png" alt="channel img">
-                                                <span>خالد الهادي</span>
-                                            </a>
-                                          </small>
-                                    </div>
-                                </div>
+                </div>
+                <div class="row " id="first__card">
+                  <div class=" col-md-12  ">
+                      <div class="card mb-3 " >
+                          <div class="card-horizontal d-lg-flex">
+                              <div class="img-square-wrapper col-lg-5 col-12  p-2 position-relative">
+                                  <a href="watch.html">
+                                    <img class="col-sm-12 p-sm-0 " src="../img/channel--img/hq720 (7).jpg" alt="Card image cap">
+                                    <time class="position-absolute p-1 px-2 me-2 mb-2 bg-dark text-white" style="left: 0; bottom: 0;  " >9:20</time>
+                                    <i class="fas fa-play fa-2x position-absolute d-none" style="top: 46%; left: 48%" ></i>
+                                  </a>
+                                  <i class="fas fa-times remove position-absolute" style="top: 15px; right: 15px; z-index: 10" ></i>
+                              </div>
+                              <div class="card-body ">
+                                  <a href="">
+                                      <h4 class="card-title">كيف تستخدم ادوات المطور في كروم</h4>
+                                  </a>
+                                  <p class="card-text">كيف تستخدم ادوات المطور في كروم كيف تستخدم ادوات المطور في كروم كيف تستخي كروم</p>
+                                  <small class="text-muted">
+                                      <i class="fa-solid fa-film me-4 ">
+                                        <span>مشاهدة0 </span>
+                                      </i>
+                                      <i class="fa-solid fa-clock me-2 ">
+                                        <span>قبل 3 اشهر</span>
+                                      </i>
+                                      <a class="" href="#" >
+                                          <img class="rounded-circle me-2" width="30" src="../img/mostaql.png" alt="channel img">
+                                          <span>خالد الهادي</span>
+                                      </a>
+                                    </small>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row " id="first__card">
+                <div class=" col-md-12  ">
+                    <div class="card mb-3 " >
+                        <div class="card-horizontal d-lg-flex">
+                            <div class="img-square-wrapper col-lg-5 col-12  p-2 position-relative">
+                                <a href="watch.html">
+                                  <img class="col-sm-12 p-sm-0 " src="../img/channel--img/hq720 (8).jpg" alt="Card image cap">
+                                  <time class="position-absolute p-1 px-2 me-2 mb-2 bg-dark text-white" style="left: 0; bottom: 0;  " >9:20</time>
+                                  <i class="fas fa-play fa-2x position-absolute d-none" style="top: 46%; left: 48%" ></i>
+                                </a>
+                                <i class="fas fa-times remove position-absolute" style="top: 15px; right: 15px; z-index: 10" ></i>
+                            </div>
+                            <div class="card-body ">
+                                <a href="">
+                                    <h4 class="card-title">كيف تستخدم ادوات المطور في كروم</h4>
+                                </a>
+                                <p class="card-text">كيف تستخدم ادوات المطور في كروم كيف تستخدم ادوات المطور في كروم كيف تستخي كروم</p>
+                                <small class="text-muted">
+                                    <i class="fa-solid fa-film me-4 ">
+                                      <span>مشاهدة0 </span>
+                                    </i>
+                                    <i class="fa-solid fa-clock me-2 ">
+                                      <span>قبل 3 اشهر</span>
+                                    </i>
+                                    <a class="" href="#" >
+                                        <img class="rounded-circle me-2" width="30" src="../img/mostaql.png" alt="channel img">
+                                        <span>خالد الهادي</span>
+                                    </a>
+                                  </small>
                             </div>
                         </div>
                     </div>
-                    <div class="row" id="Fifth__card">
-                        <div class="my-3 col-md-12  ">
-                            <div class="card  " >
-                                <div class="card-horizontal d-md-flex">
-                                    <div class="img-square-wrapper position-relative">
-                                      <span class="position-absolute x" style="top: 2px; right: 14px; z-index: 1; font-size: 25px;" >x</span>
-                                        <a href="watch.html">
-                                            <img class="col-sm-12  p-sm-0" src="../img/thumbnail/devtools.jpg" alt="Card image cap">
-                                        </a>
-                                    </div>
-                                    <div class="card-body ">
-                                        <a href="">
-                                            <h4 class="card-title">كيف تستخدم ادوات المطور في كروم</h4>
-                                        </a>
-                                        <p class="card-text">كيف تستخدم ادوات المطور في كروم كيف تستخدم ادوات المطور في كروم كيف تستخي كروم</p>
-                                        <small class="text-muted">
-                                            <i class="fa-solid fa-film me-4 ">
-                                              <span>مشاهدة  500 </span>
-                                            </i>
-                                            <i class="fa-solid fa-clock me-2 ">
-                                              <span>قبل 3 اشهر</span>
-                                            </i>
-                                            <a class="" href="#" >
-                                                <img class="rounded-circle me-2" width="30" src="../img/mostaql.png" alt="channel img">
-                                                <span>خالد الهادي</span>
-                                            </a>
-                                          </small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                </div>
+            </div>
+            <div class="row " id="first__card">
+              <div class=" col-md-12  ">
+                  <div class="card mb-3 " >
+                      <div class="card-horizontal d-lg-flex">
+                          <div class="img-square-wrapper col-lg-5 col-12  p-2 position-relative">
+                              <a href="watch.html">
+                                <img class="col-sm-12 p-sm-0 " src="../img/channel--img/hq720.jpg" alt="Card image cap">
+                                <time class="position-absolute p-1 px-2 me-2 mb-2 bg-dark text-white" style="left: 0; bottom: 0;  " >9:20</time>
+                                <i class="fas fa-play fa-2x position-absolute d-none" style="top: 46%; left: 48%" ></i>
+                              </a>
+                              <i class="fas fa-times remove position-absolute" style="top: 15px; right: 15px; z-index: 10" ></i>
+                          </div>
+                          <div class="card-body ">
+                              <a href="">
+                                  <h4 class="card-title">كيف تستخدم ادوات المطور في كروم</h4>
+                              </a>
+                              <p class="card-text">كيف تستخدم ادوات المطور في كروم كيف تستخدم ادوات المطور في كروم كيف تستخي كروم</p>
+                              <small class="text-muted">
+                                  <i class="fa-solid fa-film me-4 ">
+                                    <span>مشاهدة0 </span>
+                                  </i>
+                                  <i class="fa-solid fa-clock me-2 ">
+                                    <span>قبل 3 اشهر</span>
+                                  </i>
+                                  <a class="" href="#" >
+                                      <img class="rounded-circle me-2" width="30" src="../img/mostaql.png" alt="channel img">
+                                      <span>خالد الهادي</span>
+                                  </a>
+                                </small>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
 
                 </div>
             </div>
